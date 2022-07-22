@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Monoton&family=Roboto:wght@100;300;400;700&display=swap'); 
+
+
+@import './components/sidebarMenu';
+
+body,hr,ul{
+  margin: 0;
+}
+ul{
+  list-style-type: none;
+  padding:0;
+}
+a{
+  text-decoration: none;
+  color:#000000;
+}
