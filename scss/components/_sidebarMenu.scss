@@ -16,11 +16,8 @@
     align-items: center;
   }
   &__text{  
+    @include font(24px,400);
     margin-top: 10px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
     color: #000000;
   }
   &__img{
@@ -35,10 +32,31 @@
   &__item{
     display:flex;
     align-items: center;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+    &__locked{
+      .nav-soon{
+         display:inline;
+      }
+    }
 
   }
   &__icon{
     margin-right:20px;
+  }
+  &__link {
+    position:relative;
+    display:inline-block;
+    width:100%;
+  }
+  &__soon {
+    @include font(11px,400);
+    position:absolute;
+    right:-10px;
+    top:-10px;
+    transform:translate(0,-50%);
+    background: $bg-red;
+    border-radius: 10px;
+    padding:4px 8px;
+    color: $text-white;
   }
 }

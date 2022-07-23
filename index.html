@@ -8,6 +8,7 @@
   <title>Romsem</title>
 </head>
 <body>
+  <div class="wrapper">
   <aside class="sidebar-menu">
     <div class="logo">
       <a class="logo__link" href="./index.html">
@@ -39,8 +40,11 @@
           <a class="nav__link" href="">Суши</a>
         </li>
         <li class="nav__item">
-          <img class="nav__icon" src="./img/salat-icon.svg" alt="pizza">
-          <a class="nav__link" href="">Салаты</a>
+          <img class="nav__icon nav__item_locked" src="./img/salat-icon.svg" alt="pizza">
+          <a class="nav__link" href="">Салаты
+            <span class="nav__soon">скоро</span>
+          </a>
+          
         </li>
         <li class="nav__item">
           <img class="nav__icon" src="./img/sup-icon.svg" alt="pizza">
@@ -63,7 +67,39 @@
     </nav>
     
   </aside>
-  <main></main>
+  <div class="wrapper__content">
+    <header class="header">
+      <div class="contacts">
+        <h6 class="contacts__title">Наш телефон</h6>
+        <span class="contacts__phone">+996 705 188 955</span>
+        <span class="contacts__phone">+996 555 188 955</span>
+        <div class="contacts__time">
+          <img src="./img/oclock.svg" alt="oclock">
+          <span>работаем с 10:00 до 00:00</span>
+        </div>
+      </div>
+      <div class="header__right">
+        <div class="header__city">
+        <span>Город:</span>
+        <h6>Бишкек</h6>
+      </div>
+      <div class="header__nav">
+        <ul>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+        </ul>
+        <div class="header__search">
+          <img src="./img/search.svg" alt="search">
+        </div>
+      </div>
+      </div>
+      
+    </header>
+    <main></main>
+    <footer></footer>
+  </div>
+  
   <aside class="sidebar-cart"></aside>
+</div>
 </body>
 </html>
