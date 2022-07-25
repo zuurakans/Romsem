@@ -5,6 +5,9 @@
 
 @import './components/sidebarMenu';
 @import './components/header';
+@import './sections//slider';
+@import './sections/menu';
+@import './sections/products';
 
 body{
   font-family: 'Roboto',sans-serif;
@@ -22,8 +25,26 @@ a{
 }
 .wrapper{
   display:flex;
+  max-width:1920px;
+  margin:0 auto;
   &__content{
     width:100%;
     background-color: $bg-lightgray;
   }
+}
+main{
+padding:30px 100px;
+}
+.sidebar-cart{
+  width:430px;
+}
+.col-6{
+  width:50%;
+}
+.col-3{
+  width:25%;
+}
+.row{
+  display:flex;
+  flex-wrap:wrap;
 }

@@ -1,0 +1,87 @@
+.products{
+  &-filter{
+    display:flex;
+    margin:30px 0;
+    &__item {
+      @include font(24px,500);
+        position:relative;
+        color: $text-gray;
+        margin-right: 30px;
+        &::before{
+          position: absolute;
+          content:"";
+          left:0;
+          bottom:0;
+          width:100%;
+          height:2px;
+          background-color: $bg-gray;
+        }
+        &_active{
+          color:$text-black;
+          &::before{
+            display:none;
+          }
+        }
+    }
+  }
+  &__swiper{
+    overflow: hidden;
+  }
+  &__slider{
+    position: relative;
+    
+    img{
+      width:100%;
+      margin-bottom: 30px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      background-color:$bg-black;
+      color:$text-white;
+      width:60px;
+      height:60px;
+      border-radius: 50%;
+      &::after{
+        font-size: 24px;
+      }
+    }
+    .swiper-button-prev{
+      left:-80px;
+    }
+    .swiper-button-next{
+      right:-80px;
+    }
+  }
+  &__item{
+    padding:20px;
+    background-color: $bg-white;
+    h3{
+      @include font(24px,500);
+      color:$text-black;
+    }
+    p{
+      @include font(18px,400);
+      color: $text-gray;
+      margin: 30px 0;
+    }
+    span{
+      @include font(24px,700);
+      color:$text-black;
+      margin-bottom: 20px;
+    }
+    div{
+      @include flex(center,space-between);
+      border-top: 2px solid $bg-gray;
+      padding-top: 10px;
+    } 
+    button{
+      @include font (24px,500);
+      color: #F2F2F2;
+      background: $bg-orange;
+      padding:5px 40px;
+      border-radius: 5px;
+      border: none;
+      cursor:pointer;
+    }
+  }
+}

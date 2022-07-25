@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/index.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
   <title>Romsem</title>
 </head>
 <body>
@@ -95,11 +99,134 @@
       </div>
       
     </header>
-    <main></main>
+    <main>
+      <section class="slider">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/banner-1.png" alt="banner">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner-1.png" alt="banner">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner-1.png" alt="banner">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner-1.png" alt="banner">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner-1.png" alt="banner">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        
+      </section>
+      <section class="menu">
+        <div class="row">
+          <div class="col-6">
+            <div class="menu-item">
+              <h3 class="menu-item__title">Чикен</h3>
+              <img src="./img/chiken.jpg" alt="Чикен">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="menu-item">
+              <h3 class="menu-item__title">С угрем</h3>
+              <img src="./img/sugrem.jpg" alt="С угрем">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="menu-item">
+              <h3 class="menu-item__title">Корн дог</h3>
+              <img src="./img/corndog.jpg" alt="Корн дог">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="menu-item">
+              <h3 class="menu-item__title">Пицца</h3>
+              <img src="./img/pizza.jpg" alt="Пицца">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="menu-item">
+              <h3 class="menu-item__title">Акции</h3>
+              <img src="./img/akcii.jpg" alt="Акции">
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="products">
+        <ul class="products-filter">
+           <li class="products-filter__item products-filter__item_active">Новинки</li>
+           <li class="products-filter__item">Популярное</li>
+           <li class="products-filter__item">Хиты</li>
+           <li class="products-filter__item">Актуальное</li>
+        </ul>
+        <div class="products__slider">
+          <div class="products__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="products__item">
+                  <img src="./img/product-item-1.png" alt="Саломон сет">
+                  <h3>Саломон сет</h3>
+                  <p>1050 грамм, 30 кусочков</p>
+                  <div>
+                    <span>1500 СОМ</span>
+                    <button>Хочу!</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__item">
+                  <img src="./img/product-item-1.png" alt="Саломон сет">
+                  <h3>Саломон сет</h3>
+                  <p>1050 грамм, 30 кусочков</p>
+                  <div>
+                    <span>1500 СОМ</span>
+                    <button>Хочу!</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__item">
+                  <img src="./img/product-item-1.png" alt="Саломон сет">
+                  <h3>Саломон сет</h3>
+                  <p>1050 грамм, 30 кусочков</p>
+                  <div>
+                    <span>1500 СОМ</span>
+                    <button>Хочу!</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__item">
+                  <img src="./img/product-item-1.png" alt="Саломон сет">
+                  <h3>Саломон сет</h3>
+                  <p>1050 грамм, 30 кусочков</p>
+                  <div>
+                    <span>1500 СОМ</span>
+                    <button>Хочу!</button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </div>
   
   <aside class="sidebar-cart"></aside>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/filter.js"></script>
 </body>
 </html>

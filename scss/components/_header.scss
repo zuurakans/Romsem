@@ -59,6 +59,7 @@
       @include font(14px,500);
       color: $text-gray;
       margin-left: 5px;
+      white-space: nowrap;
     }
   }
 }

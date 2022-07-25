@@ -1,6 +1,6 @@
 .sidebar-menu{
   display:inline-block;
-  padding:25px 65px;
+  padding:25px 50px;
   hr{
     width: 180px;
     height:1px;
@@ -47,6 +47,7 @@
     position:relative;
     display:inline-block;
     width:100%;
+    white-space: nowrap;
   }
   &__soon {
     @include font(11px,400);
