@@ -11,6 +11,8 @@
 @import './sections/products';
 @import './sections/about';
 @import './sections/footer';
+@import './components/sidebarCart';
+@import './components/goods';
 
 body{
   font-family: 'Roboto',sans-serif;
@@ -36,15 +38,16 @@ a{
   }
 }
 main{
-max-width:1170px;
+width:1170px;
 margin:0 auto;
 padding:30px 100px;
 }
-.sidebar-cart{
-  width:430px;
-}
+
 .col-6{
   width:50%;
+}
+.col-4{
+  width:33.33%;
 }
 .col-3{
   width:25%;
