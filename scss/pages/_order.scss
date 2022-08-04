@@ -1,0 +1,46 @@
+.order{
+  background-color: $bg-lightgray;
+  min-height: 100vh;
+  .header{
+    justify-content: center;
+    .back{
+      @include font (18px,500);
+      position:absolute;
+      left:100px;
+      top:50px;
+      color: $text-black;
+      img{
+        margin-right: 10px;
+      }
+    }
+    .contacts{
+      border: none;
+    }
+  }
+  &-form{
+    max-width:760px;
+    margin:auto;
+    &__title{
+      @include font(24px,500);
+      color: $text-black;
+    }
+  }
+input{
+  @include font(18px,400);
+  background: $bg-white;
+  border-radius: 5px;
+  border: none;
+  padding:10px;
+  color: $text-gray;
+  max-width:40%;
+}
+&-form__item{
+  margin-bottom: 20px;
+  input:first-of-type{
+    margin-right: 20px;
+  }
+  input{
+    
+  }
+}
+}

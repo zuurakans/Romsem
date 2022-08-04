@@ -60,4 +60,11 @@
     padding:4px 8px;
     color: $text-white;
   }
+  @include mobile (){
+    .sidebar-menu{
+      display: none;
+    }
+    
+  }
 }
+

@@ -23,6 +23,10 @@ min-width:430px;
   @include font (14px,400);
   color:$text-lightgray;
   margin-top: 26px;
+
+}
+@include mobile (){
+  display: none;
 }
 }
 .sidebar__map{
@@ -55,3 +59,4 @@ min-width:430px;
   color: $text-gray;
  }
 }
+

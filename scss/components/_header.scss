@@ -33,6 +33,7 @@
        color:$text-orange;
       }
     }
+   
   }
   &__search{
     margin-left: 70px;
@@ -60,6 +61,15 @@
       color: $text-gray;
       margin-left: 5px;
       white-space: nowrap;
+    }
+  }
+}
+
+.header{
+  &__nav,
+  &__city{
+    @include mobile{
+      display:none;
     }
   }
 }

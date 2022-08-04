@@ -4,15 +4,21 @@
 @import './helpers/mixins';
 @import './helpers/variables';
 
-@import './components/sidebarMenu';
-@import './components/header';
+
 @import './sections//slider';
 @import './sections/menu';
-@import './sections/products';
 @import './sections/about';
-@import './sections/footer';
+@import './components/sidebarMenu';
+@import './components/header';
+@import './sections/products';
+@import './components/footer';
 @import './components/sidebarCart';
 @import './components/goods';
+@import './components/reviews';
+@import './components/ways';
+@import './pages/order';
+
+@import './vendors/swiper-bundle.min';
 
 body{
   font-family: 'Roboto',sans-serif;
